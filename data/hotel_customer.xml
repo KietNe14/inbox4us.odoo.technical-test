@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <data noupdate="1">
+
+        <record id="customer_1" model="hotel.customer">
+            <field name="name">Le</field>
+            <field name="email">le@gmail.com</field>
+            <field name="phone">09633333</field>
+        </record>
+
+        <record id="customer_2" model="hotel.customer">
+            <field name="name">Huynh</field>
+            <field name="email">huynh@gmail.com</field>
+            <field name="phone">096000000</field>
+        </record>
+
+        <record id="customer_3" model="hotel.customer">
+            <field name="name">Tuan</field>
+            <field name="email">tuan@gmail.com</field>
+            <field name="phone">096222222</field>
+        </record>
+
+        <record id="customer_4" model="hotel.customer">
+            <field name="name">Kịt</field>
+            <field name="email">kietlht@gmail.com</field>
+            <field name="phone">0962085504</field>
+        </record>
+
+
+
+    </data>
+
+
+</odoo>

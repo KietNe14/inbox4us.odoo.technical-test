@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<odoo><data>
+
+    <!-- MAIN MENU -->
+    <menuitem name="Hotel Rooms"
+        id="hotel_main_menu"
+        sequence="100"
+        groups="hotel_management.group_hotel_registration_desk"
+        web_icon="hotel_management,static/description/icon.png"/>
+
+    <menuitem name="Hotel Rooms"
+        id="menu_hotel_room"
+        sequence="10"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="hotel_main_menu"/>
+
+    <menuitem name="Bookings"
+        id="menu_hotel_booking"
+        sequence="20"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="hotel_main_menu"/>
+
+    <menuitem name="Customers"
+        id="menu_hotel_customer"
+        sequence="30"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="hotel_main_menu"/>
+    
+    <menuitem name="Hotel Reports"
+        id="menu_hotel_reports"
+        sequence="30"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="hotel_main_menu"/>
+    
+    <menuitem name="Booking Report"
+        id="menu_booking_report"
+        sequence="30"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="menu_hotel_reports"/>
+
+    <menuitem name="Customer Registration Report"
+        id="menu_customer_report"
+        sequence="30"
+        groups="hotel_management.group_hotel_registration_desk"
+        parent="menu_hotel_reports"/>
+
+
+</data></odoo>

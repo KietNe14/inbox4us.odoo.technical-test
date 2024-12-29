@@ -1,0 +1,81 @@
+<odoo>
+
+    <record id="hotel_booking_report_tree_view" model="ir.ui.view">
+        <field name="name">hotel.booking.report.view</field>
+        <field name="model">hotel.booking.report</field>
+        <field name="arch" type="xml">
+            <tree string="Booking Report">
+                <field name="check_in_date"/>
+                <field name="booking_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hotel_booking_report_form_view" model="ir.ui.view">
+        <field name="name">hotel.booking.report.form.view</field>
+        <field name="model">hotel.booking.report</field>
+        <field name="arch" type="xml">
+            <form string="Hotel Room">
+                <sheet>
+                    <div class="oe_title">
+                        <field name="check_in_date"/>
+                        <field name="booking_count"/>
+                    </div>
+                    <group>
+                        <field name="booking_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="hotel_customer_report_tree_view" model="ir.ui.view">
+        <field name="name">hotel.customer.report.view</field>
+        <field name="model">hotel.customer.report</field>
+        <field name="arch" type="xml">
+            <tree string="Booking Report">
+                <field name="date"/>
+                <field name="customer_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hotel_customer_report_form_view" model="ir.ui.view">
+        <field name="name">hotel.customer.report.form.view</field>
+        <field name="model">hotel.customer.report</field>
+        <field name="arch" type="xml">
+            <form string="Hotel Room">
+                <sheet>
+                    <div class="oe_title">
+                        <field name="date"/>
+                        <field name="customer_count"/>
+                    </div>
+                    <group>
+                        <field name="customer_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_booking_report" model="ir.actions.act_window">
+        <field name="name">Booking Report</field>
+        <field name="res_model">hotel.booking.report</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_customer_report" model="ir.actions.act_window">
+        <field name="name">Customer Registration Report</field>
+        <field name="res_model">hotel.customer.report</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="hotel_management.menu_booking_report" model="ir.ui.menu">
+        <field name="action" ref="hotel_management.action_booking_report"/>
+    </record>
+    
+    <record id="hotel_management.menu_customer_report" model="ir.ui.menu">
+        <field name="action" ref="hotel_management.action_customer_report"/>
+    </record>
+</odoo>
